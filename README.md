@@ -9,16 +9,16 @@ they won't work properly otherwise.
 
 ### Scripts:
 
--   [AFR.exe (anime-files-renamer.ps1)](#afrexe)
--   [AFE.exe (Anime-files-renamer-episodes-only.ps1)](#afeexe)
--   [ADR.exe (anime-directories-renamer.ps1)](#adrexe)
--   [R&M.exe (anime-rename-and-move.ps1)](#r&mexe)
+-   [AFR.exe (anime-files-renamer.ps1)](#afrexe-anime-files-renamerps1)
+-   [AFE.exe (anime-files-renamer-episodes-only.ps1)](#afeexe-anime-files-renamer-episodes-onlyps1)
+-   [ADR.exe (anime-directories-renamer.ps1)](#adrexe-anime-directories-renamerps1)
+-   [R&M.exe (anime-rename-and-move.ps1)](#rmexe-anime-rename-and-moveps1)
 
 ## Usage
 
 just place the .exe in the parent folder that you want to change its children files/folders and run it.
 
-## AFR.exe
+## AFR.exe (anime-files-renamer.ps1)
 
 will remove all `[]` and their content, for example:
 
@@ -62,7 +62,7 @@ Parent
 
 **NOTE:** this script will only recognize files with those extensions: `.mvk`, `.mp4`, `.ass`, `.srt`.
 
-## AFE.exe
+## AFE.exe (anime-files-renamer-episodes-only.ps1)
 
 will remove all `[]` and `()` with their content then will extract all numbers from the remaining text. If the file name doesn't have numbers in it will not rename the file.
 
