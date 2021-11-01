@@ -9,10 +9,10 @@ they won't work properly otherwise.
 
 ### Scripts:
 
--   [AFR.exe (anime-files-renamer.ps1)](#afr.exe)
--   [AFE.exe (Anime-files-renamer-episodes-only.ps1)](#afe.exe)
--   [ADR.exe (anime-directories-renamer.ps1)](#adr.exe)
--   [R&M.exe (anime-rename-and-move.ps1)](#r&m.exe)
+-   [AFR.exe (anime-files-renamer.ps1)](#afrexe)
+-   [AFE.exe (Anime-files-renamer-episodes-only.ps1)](#afeexe)
+-   [ADR.exe (anime-directories-renamer.ps1)](#adrexe)
+-   [R&M.exe (anime-rename-and-move.ps1)](#r&mexe)
 
 ## Usage
 
