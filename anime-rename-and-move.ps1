@@ -2,13 +2,15 @@ $fileExists = Test-Path "$env:USERPROFILE\Documents\rename-and-move-config.txt" 
 if ($false -eq $fileExists) {
     Write-output "Starting Configuration... if you Want to edit your configuration you can do so in '%USERPROFILE%\Documents\rename-and-move-config.txt'"
     $location = Read-Host -Prompt 'The parent folder you want your files to move to, e.g. "D:\anime"';
-    "$location" | Out-File "$env:USERPROFILE\Documents\rename-and-move-config.txt" 
+    "$location" | Out-File "$env:USERPROFILE\Documents\rename-and-move-config.txt"
 }
 $files = Get-Item -Path "$pwd\*"  -include *.ass , *.srt, *.mp4, *.mkv
 foreach ($file in $files) {
     try {
-        $newName = ($file.name -replace "\[([^\[]*)\]", "").trim()
-        $file | Rename-Item -NewName $newName;
+        $ext = [System.IO.Path]::GetExtension($file);
+        $name = [System.IO.Path]::GetFileNameWithoutExtension($file);
+        $newName = ($name -replace "\[([^\[]*)\]", "" ).trim()
+        $file | Rename-Item -NewName ($newName + $ext);
     }
     catch {
     }
